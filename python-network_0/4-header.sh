@@ -1,3 +1,3 @@
 #!/bin/bash
-# sends GET request to given URL, with key-value, and displays body of response
-curl -sH "X-HolbertonSchool-User-Id:98" "$1"
+# Send a GET request to a given URL with a header variable.
+curl -sH "X-HolbertonSchool-User-Id: 98" "$1"

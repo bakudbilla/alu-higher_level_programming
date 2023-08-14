@@ -6,14 +6,20 @@ The 5-text_indentation module supplies one function, text_indentation(text).
 
 
 def text_indentation(text):
-    """
-    Prints text with 2 new lines after each ".", "?", and ":"
-    """
-    if not isinstance(text, str):
+    """splits a text into lines along "?", ":", "." followed by 2 new lines"""
+    if type(text) is not str:
         raise TypeError("text must be a string")
-
-    for char in ".?:":
-        text = text.replace(char, char + "\n\n")
-    list_lines = [lines.strip(' ') for lines in text.split('\n')]
-    revised = "\n".join(list_lines)
-    print(revised, end="")
+    flag = 0
+    for a in text:
+        if flag == 0:
+            if a == ' ':
+                continue
+            else:
+                flag = 1
+        if flag == 1:
+            if a == '?' or a == '.' or a == ':':
+                print(a)
+                print()
+                flag = 0
+            else:
+                print(a, end="")

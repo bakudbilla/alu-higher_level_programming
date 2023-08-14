@@ -47,4 +47,4 @@ def matrix_divided(matrix, div):
     for element in matrix:
         new_matrix.append(list(map(lambda n: round(n / div, 2), element)))
 
-    return new_matrix<F2>
+    return new_matrix

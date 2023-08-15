@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-lists all State objects from the database that contain 'a'
-using SQLAlchemy and importing State and Base from model_state
-"""
+"""list all state objects that contain the letter 'a' from the database""" 
 
 
 from sys import argv

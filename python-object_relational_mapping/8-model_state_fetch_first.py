@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
 This prints first State object from the database without fetch all states
-using SQLAlchemy and importing State and Base from model_state
 """
+
 
 from sys import argv
 from model_state import Base, State

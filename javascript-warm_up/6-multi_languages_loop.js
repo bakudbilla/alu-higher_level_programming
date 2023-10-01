@@ -1,2 +1,6 @@
-t lines = ['JavaScript is amazing', 'Python is cool', 'C is fun'];
-for (const line of lines.reverse()) console.log(line);
+#!/usr/bin/node
+const myVar = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+let i = 0;
+for (i = 0; i < myVar.length; i++) {
+  console.log(myVar[i]);
+}
